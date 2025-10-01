@@ -4,6 +4,7 @@ TanksGame: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/TanksGame.dir/src/main.cpp.o \
   external/glfw/src/libglfw3.a \
+  external/glad/libglad.a \
   /usr/lib/librt.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
@@ -43,6 +44,8 @@ TanksGame: \
 CMakeFiles/TanksGame.dir/src/main.cpp.o:
 
 external/glfw/src/libglfw3.a:
+
+external/glad/libglad.a:
 
 /usr/lib/librt.a:
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/deathplayworld/Programming/C++/GLFW and OpenGL/external/glfw/include"
+CXX_INCLUDES = -I"/home/deathplayworld/Programming/C++/GLFW and OpenGL/external/glfw/include" -I"/home/deathplayworld/Programming/C++/GLFW and OpenGL/external/glad/include"
 
 CXX_FLAGS = 
 

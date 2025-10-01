@@ -97,6 +97,7 @@ TanksGame: CMakeFiles/TanksGame.dir/src/main.cpp.o
 TanksGame: CMakeFiles/TanksGame.dir/build.make
 TanksGame: CMakeFiles/TanksGame.dir/compiler_depend.ts
 TanksGame: external/glfw/src/libglfw3.a
+TanksGame: external/glad/libglad.a
 TanksGame: /usr/lib/librt.a
 TanksGame: /usr/lib/libm.so
 TanksGame: CMakeFiles/TanksGame.dir/link.txt
