@@ -5,26 +5,28 @@
 
 int main(void)
 {
-    GLFWwindow* window;
-
     /* Initialize the library */
     if (!glfwInit())
+    {
+        std::cout << "Error! Failed to initialize glfw!" << std::endl;
+
         return -1;
+    }
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if (!window)
+    GLFWwindow*  pWindow = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    if (!pWindow)
     {
         glfwTerminate();
         return -1;
     }
 
     /* Make the window's context current */
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(pWindow);
 
     if (!gladLoadGL())
     {
-        std::cout << "Can't load GLAD!" << std::endl;
+        std::cout << "Error! Can't load GLAD!" << std::endl;
         return -1;
     }
 
@@ -33,13 +35,13 @@ int main(void)
     glClearColor(100, 100, 0, 100);
 
     /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(pWindow))
     {
         /* Render here */
        glClear(GL_COLOR_BUFFER_BIT);
 
         /* Swap front and back buffers */
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(pWindow);
 
         /* Poll for and process events */
         glfwPollEvents();
